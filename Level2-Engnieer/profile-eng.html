@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>level2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/accsess.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">MSM</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+    <!--end navbar-->
+
+    <!--start list-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="profile"></span> Profile <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span> Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="departments"></span> Departments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="MedicalEquipment"></span> Medical Equipments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="WorkOrders"></span> Work Orders
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span> Reports </span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>Connect with Companies
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span> Send Mail
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--end list-->
+
+            <!--profile content-->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Profile</h1>
+                </div>
+                <div class="mb-3">
+                    <div class="image-preview" id="imagePreview">
+                        <img src="" class="image-preview__image" alt="UserImage">
+                        <span class="image-preview__default-text">User Image</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Input" class="form-label">Job:</label>
+                        <input type="text" class="form-control" id="job">
+                    </div>
+
+                    <!--selector-->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Admin
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                    <!--end-->
+
+                    <div class="mb-3">
+                        <label for="Input" class="form-label">Email address:</label>
+                        <input type="email" class="form-control" id="Input" aria-describedby="emailHelp" placeholder="name@example.com">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Input" class="form-label">UserName:</label>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">User Image:</label>
+                        <input class="form-control" type="file" id="inpFile" name="inpFile">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <div id="passwordHelpBlock" class="form-text">
+                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Profile</button>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="profilepic.js"></script>
+</body>
+
+</html>

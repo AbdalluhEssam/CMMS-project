@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>level2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/accsess.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">MSM</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+    <!--end navbar-->
+
+    <!--srart list-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span> Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span> Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file"></span> Departments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users"></span> Medical Equipment
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="shopping-cart"></span> Work Orders <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span> Reports </span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span> Connect with companies
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span> Send Mail
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--end list-->
+
+            <!--Service content by Requester-->
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Request For Service (By Requester)</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+                        </div>
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Service Request Number:</label>
+                    <input type="text" class="form-control" id="ServiceRequestNumber">
+                    <label for="Input" class="form-label">Supervisor/Head Of Department:</label>
+                    <input type="text" class="form-control" id="supervisorOfDepartment">
+                </div>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Requester Name:</label>
+                        <input type="text" class="form-control" id="RequestName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Requester Phone Number:</label>
+                        <input type="text" class="form-control" id="RequesterPhoneNumber">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Equipment/Description:</label>
+                        <input type="text" class="form-control" id="Equipment">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Equipment ID:</label>
+                        <input type="text" class="form-control" id="EquipmentID">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Department:</label>
+                        <input type="text" class="form-control" id="Department">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Equipment Serial:</label>
+                        <input type="text" class="form-control" id="Equipment Serial">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Service Requested(Repair/Transfer/Training):</label>
+                        <input type="text" class="form-control" id="ServiceRequested">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Detailed Problem:</label>
+                        <input type="text" class="form-control" id="DetailedProblem">
+                    </div>
+                </form>
+
+
+                <!--by biomedical department-->
+
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Request For Service (By Biomedical Department)</h1>
+                </div>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Recipient (Order/Equipment):</label>
+                        <input type="text" class="form-control" id="Recipient ">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Service Type (IN Service/OUT Service):</label>
+                        <input type="text" class="form-control" id="type">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Priority (Emergency/Routine/Deferred):</label>
+                        <input type="text" class="form-control" id="Priority">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Estimated Cost and Duration:</label>
+                        <input type="text" class="form-control" id="Equipmentid">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">What was the problem?</label>
+                        <input type="text" class="form-control" id="problem">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">What is the cause of the problem?</label>
+                        <input type="text" class="form-control" id="cause">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">How to solve the problem?</label>
+                        <input type="text" class="form-control" id="Solve">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">How to prevent the problem in the future?</label>
+                        <input type="text" class="form-control" id="Detailed-Problem">
+                    </div>
+
+                    <!--selector-->
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                        <div class="dropdown col-12">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Assign To:
+                        </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="input" class="form-label">Completed Time:</label>
+                        <input type="text" class="form-control" id="completedTime">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="input" class="form-label">Supervisor/Head Of Department:</label>
+                        <input type="text" class="form-control" id="SupervisorOfDepartment">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input" class="form-label">Date & Time:</label>
+                        <input type="text" class="form-control" id="date&time">
+                    </div>
+                </form>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                </div>
+
+                <!--Checked table-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Checked:</th>
+                            <th scope="col">Time:</th>
+                            <th scope="col">By:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1-Disconnect all tubing and cables (pneumatic and electric) from the PAPHAEL. 2-Using a 2.5mm hexagonal (Allen) key, Remove the 8 screws that secure, Four screws are at the rear of RAPHEAL, Four ate underneath. 3-Remove the
+                                closure. 4-Verify that all cables and tubing in RAPHAEL are in good condition, Connected, and Right place. 5-Make sure tha tubing for the oxygen cell measurment is not squeezed between the tank and the white inspiratory
+                                tube. 6-Check all assemblies for damage and incorrect installation.
+                            </td>
+                            <td>7/7/2021 - 08:10:05</td>
+                            <td>Eng/...</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+
+                <div class="mb-12 text-center ">
+                    <h2>Closed!</h2>
+                    <h4>Time Response</h4>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+
+                    <!--Time Response Table-->
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th>Days:Hours:Minutes:Seconds</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>0 : 08 : 10 : 05</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+        </script>
+        <script src="../JS/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+</body>
+
+</html>

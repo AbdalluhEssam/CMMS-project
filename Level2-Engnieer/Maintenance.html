@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>level2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/accsess.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">MSM</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+    <!--end navbar-->
+
+    <!--srart list-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span> Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span> Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file"></span> Departments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users"></span> Medical Equipments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="shopping-cart"></span> Work Orders <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span> Reports </span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span> Connect with companies
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span> Send Mail
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--end list-->
+
+
+            <!--maintenance content-->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Hospital Preventive Maintenance ( <a href="#">Ventilator )</a></h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+                        </div>
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Part/Accessory</th>
+                            <th>Procedure</th>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Breating Circut (including inspiratory filter, Flow sensor, Expiratory valve housing and membrance). </td>
+                            <td>Replace with sterilized or new signal-patient use parts, Run the tightness test and Flow sensor test, as requierd</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Brithing Circuit.</td>
+                            <td>Empty any waterfrom hoses or water traps, Inspect parts from damage, Replace as necessary.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Air-inlet water trap, Gas-inlet water trap.</td>
+                            <td>Empty any water.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Air-inlet self-emptying water trap (where fitted).</td>
+                            <td>None.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Fan filter (rear panel).</td>
+                            <td>Check for dust and lint. If needed, clean or replace. (Details in operating manual.) </td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Oxygen cell.</td>
+                            <td>Replace if exhausted. If exhausted, one of the following messages appears on screen during normal operation: (1- O2 Cell defective. 2- No O2 Cell in use.) </td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                </table>
+
+                <!--submit button 1-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Hospital Preventive Maintenance (Ventilator)</h1>
+                </div>
+
+                <!--table 2-->
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>General maintenance of water traps.</td>
+                            <td>1-Inspect the microfilters on the water traps.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>2-Replace the microfilters if dirty or discolored. </td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>3-Clean the filter housing if necessary.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                </table>
+
+                <!--submit button 2-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+                <!--table 3-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <td></td>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>Internal cable and tubing checks. </td>
+                            <td>1-Disconnect all tubing and cables (pneumatic and electric) from the PAPHAEL.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>2-Using a 2.5mm hexagonal (Allen) key, Remove the 8 screws that secure, Four screws are at the rear of RAPHEAL, Four ate underneath.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>3-Remove the closure.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>4-Verify that all cables and tubing in RAPHAEL are in good condition, Connected, and Right place. </td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>5-Make sure tha tubing for the oxygen cell measurment is not squeezed between the tank and the white inspiratory tube.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>6-Check all assemblies for damage and incorrect installation.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--submit button 3-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+
+                <!--table 4-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>External checks.</td>
+                            <td>1-Make sure the Expiratory valve ring turns smoothly and that the valve plunger pin is clean and moves up and down easily.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>2-Make sure the oxygen cell holder is in place and the O-ring is present.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>3-Make sure the air and oxygen inlet connectors are mounted correctly. </td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>4-Go to section 9, Backup Battery and voltage tests.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--submit button 4-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+                <!--table 5-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>Backup Battery replacement.</td>
+                            <td>Checking the age of the backup battery.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--submit button 5-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+
+                <!--table 6-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>12V Batteries condition test. </td>
+                            <td>In this test, you measure battery voltage against time (The absolute battery voltage after a first, 2-minutes period of battery use. This voltage must be greater than, or equal to 23.5V).</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>The drop in battery voltage after a second, 3-minutes period of battery use. This drop must be less than, or equal to (0.5V).</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                </table>
+
+                <!--submit button 6-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+
+                <!--table 7-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>Connector condition test. </td>
+                            <td>1-Check the voltage difference between the battery negative contact and the mainboard ground:</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>2-Check the voltage difference between the battery +24V contact and the mainboard:</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> </td>
+                            <td>3-If either of the values from step (1) ar step (2) above are out of range, test and correct all connections between Batteries and mainboard. </td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                </table>
+
+                <!--submit button 7-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+
+
+                <!--table 8-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Check</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>Electrical safety tests.</td>
+                            <td>1-Check the ground (aerth) wires for proper connection.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>2-Make sure that the two screws that secure and ground (earth) the mainboard are in place and are tight.</td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>3-Check the resistance between the ground (earth) pin on RAPHAEL is power inlet socket. </td>
+                            <td>
+                                <div class="check">
+                                    <input class="check-input" type="checkbox">
+                                </div>
+                            </td>
+                        </tr>
+                </table>
+
+                <!--submit button 8-->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Submit</button>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                </div>
+
+
+
+                <!--service manual button-->
+                <div class="d-grid gap-2 col-6 mx-auto text-center">
+                    <button class="btn btn-primary" type="button">Service Manual</button>
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+</body>
+
+</html>
