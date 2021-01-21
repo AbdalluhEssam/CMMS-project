@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>level3</title>
+    <title>level2</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="../css/accsess.css" rel="stylesheet">
 </head>
@@ -25,7 +25,6 @@
         </ul>
     </nav>
     <!--end navbar-->
-
     <!--start list-->
     <div class="container-fluid">
         <div class="row">
@@ -33,8 +32,8 @@
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <span data-feather="home"></span> Profile <span class="sr-only">(current)</span>
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span> Profile
                             </a>
                         </li>
                         <li class="nav-item">
@@ -53,7 +52,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link active" href="#">
                                 <span data-feather="users"></span> Medical Equipments
                             </a>
                         </li>
@@ -91,72 +90,82 @@
             </nav>
             <!--end list-->
 
-            <!--profile content-->
+
+            <!--departments content-->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Profile</h1>
+                    <h1 class="h2">Add Equipment</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <div class="image-preview" id="imagePreview">
-                        <img src="" class="image-preview__image" alt="UserImage">
-                        <span class="image-preview__default-text">User Image</span>
-                    </div>
+                    <label for="Input" class="form-label">ID:</label>
+                    <input type="text" class="form-control" id="id">
                 </div>
-                <form>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                            </div>
-                        </div>
-                    </div>
-                    <!---selector-->
-                    <div class="mb-3">
-                        <label for="Input" class="form-label">Job:</label>
-                        <input type="text" class="form-control" id="job">
-                    </div>
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Admin
-                        </a>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Name of Equipment:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Location:</label>
+                    <input type="text" class="form-control" id="Location">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Manufactuer:</label>
+                    <input type="text" class="form-control" id="Manufactuer">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Country:</label>
+                    <input type="text" class="form-control" id="country">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Model:</label>
+                    <input type="text" class="form-control" id="Model">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Serial Number:</label>
+                    <input type="text" class="form-control" id="serial-number">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Risk Level:</label>
+                    <input type="text" class="form-control" id="risk-level">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Class:</label>
+                    <input type="text" class="form-control" id="class">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">BioCode:</label>
+                    <input type="text" class="form-control" id="biocode">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Medical Agent:</label>
+                    <input type="text" class="form-control" id="Agent">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Dilvery Date:</label>
+                    <input type="text" class="form-control" id="dilveryDate">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">End Warrenty Date:</label>
+                    <input type="text" class="form-control" id="warrentyDate">
+                </div>
+                <div class="mb-3">
+                    <label for="Input" class="form-label">Spare Parts:</label>
+                    <input type="text" class="form-control" id="spare">
+                </div>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="Input" class="form-label">Email address:</label>
-                        <input type="email" class="form-control" id="Input" aria-describedby="emailHelp" placeholder="name@example.com">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="Input" class="form-label">UserName:</label>
-                        <div class="input-group flex-nowrap">
-                            <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label">User Image:</label>
-                        <input class="form-control" type="file" id="inpFile" name="inpFile">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password:</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                        <div id="passwordHelpBlock" class="form-text">
-                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Update Profile</button>
-                </form>
+                <!--button-->
+                <div class="d-grid gap-2 col-auto mx-auto">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
             </main>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
@@ -164,7 +173,7 @@
     <script src="../JS/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="profilepic.js"></script>
+
 </body>
 
 </html>

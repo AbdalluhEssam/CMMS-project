@@ -25,7 +25,6 @@
         </ul>
     </nav>
     <!--end navbar-->
-
     <!--start list-->
     <div class="container-fluid">
         <div class="row">
@@ -33,8 +32,8 @@
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <span data-feather="home"></span> Profile <span class="sr-only">(current)</span>
+                            <a class="nav-link" href="#">
+                                <span data-feather="home"></span> Profile
                             </a>
                         </li>
                         <li class="nav-item">
@@ -59,7 +58,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <span data-feather="shopping-cart"></span> Work Orders
+                                <span data-feather="shopping-cart"></span> Work Orders <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -77,8 +76,8 @@
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span> Connect with companies
+                            <a class="nav-link active" href="#">
+                                <span data-feather="file-text"></span> Connect with companies <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -91,69 +90,84 @@
             </nav>
             <!--end list-->
 
-            <!--profile content-->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Profile</h1>
-                </div>
-                <div class="mb-3">
-                    <div class="image-preview" id="imagePreview">
-                        <img src="" class="image-preview__image" alt="UserImage">
-                        <span class="image-preview__default-text">User Image</span>
-                    </div>
-                </div>
-                <form>
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                            </div>
+                    <h1 class="h2">The Companies:</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+                        </div>
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
                         </div>
                     </div>
-                    <!---selector-->
-                    <div class="mb-3">
-                        <label for="Input" class="form-label">Job:</label>
-                        <input type="text" class="form-control" id="job">
-                    </div>
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Admin
-                        </a>
+                </div>
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Comany Name</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>semiens</td>
+                            <td><a href="#">00201056565</a></td>
+                            <td><a href="mailto:someone@example.com">someone@example.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>semiens</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Toshiba</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Alaraby</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                <!--Add new company-->
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h4 class="h2">Add New Company:</h4>
+                </div>
+                <div class="mb-6">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="Input" class="form-label">Email address:</label>
-                        <input type="email" class="form-control" id="Input" aria-describedby="emailHelp" placeholder="name@example.com">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <!--button-->
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                    <div class="d-grid gap-2 col-auto mx-auto">
+                        <button type="submit" class="btn btn-primary">Add</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="Input" class="form-label">UserName:</label>
-                        <div class="input-group flex-nowrap">
-                            <span class="input-group-text" id="addon-wrapping">@</span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label">User Image:</label>
-                        <input class="form-control" type="file" id="inpFile" name="inpFile">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password:</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                        <div id="passwordHelpBlock" class="form-text">
-                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Update Profile</button>
-                </form>
+                </div>
             </main>
         </div>
     </div>
@@ -164,7 +178,7 @@
     <script src="../JS/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="profilepic.js"></script>
+
 </body>
 
 </html>
