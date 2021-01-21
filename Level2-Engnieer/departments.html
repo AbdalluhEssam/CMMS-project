@@ -26,7 +26,7 @@
     </nav>
     <!--end navbar-->
 
-    <!--srart list-->
+    <!--start list-->
     <div class="container-fluid">
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -34,7 +34,7 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <span data-feather="Profile"></span> Profile
+                                <span data-feather="home"></span> Profile
                             </a>
                         </li>
                         <li class="nav-item">
@@ -43,22 +43,21 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="department"></span> Departments
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="Equpment"></span> Medical Equipment
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" href="#">
-                                <span data-feather="WorkOrders"></span> Work Orders <span class="sr-only">(current)</span>
+                                <span data-feather="file"></span> Departments <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users"></span> Medical Equipments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="shopping-cart"></span> Work Orders
                             </a>
                         </li>
                     </ul>
-
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span> Reports </span>
                         <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
@@ -68,12 +67,12 @@
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span> Connect with companies
+                                <span data-feather="file-text"></span>Connect with Companies
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span> Send Mail
+                                <span data-feather="file-text"></span>Send Mail
                             </a>
                         </li>
                     </ul>
@@ -81,75 +80,87 @@
             </nav>
             <!--end list-->
 
-            <!--work order content-->
+            <!--departments content-->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Work Orders</h1>
+                    <h1 class="h2">Departments</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group mr-2">
                             <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
                         </div>
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
+                        </div>
                     </div>
                 </div>
-
-                <!--work order table-->
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Service Request Number</th>
-                            <th scope="col">Equipment</th>
-                            <th scope="col">Department</th>
-                            <th scope="col">Case</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td> <a href="#">Monitor</a> </td>
-                            <td>Cath.Unit</td>
-                            <td>Open</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">15</th>
-                            <td> <a href="#">CATH LAB</a> </td>
-                            <td>Cath.Unit</td>
-                            <td>Open</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">16</th>
-                            <td> <a href="#"> Ventilator </a> </td>
-                            <td>Cath.Unit</td>
-                            <td>Open</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Your Response</h1>
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Department</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1,001</td>
+                                <td>Emergency</td>
+                            </tr>
+                            <tr>
+                                <td>1,002</td>
+                                <td>ICU</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>Radiology</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>Childern Section</td>
+                            </tr>
+                            <tr>
+                                <td>1,004</td>
+                                <td>Sterilization</td>
+                            </tr>
+                            <tr>
+                                <td>1,005</td>
+                                <td>Dental Clinic</td>
+                            </tr>
+                            <tr>
+                                <td>1,006</td>
+                                <td>CATH. UNIT</td>
+                            </tr>
+                            <tr>
+                                <td>1,007</td>
+                                <td>Bones</td>
+                            </tr>
+                            <tr>
+                                <td>1,008</td>
+                                <td>Obstetrics and Gynecology</td>
+                            </tr>
+                            <tr>
+                                <td>1,009</td>
+                                <td>Cardiologr</td>
+                            </tr>
+                            <tr>
+                                <td>1,010</td>
+                                <td>Hematology</td>
+                            </tr>
+                            <tr>
+                                <td>1,011</td>
+                                <td>Endoscopy</td>
+                            </tr>
+                            <tr>
+                                <td>1,012</td>
+                                <td>Plastic Surgery</td>
+                            </tr>
+                            <tr>
+                                <td>1,012</td>
+                                <td>Ear,Nose and Throat</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <!--response table-->
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Total Work Orders</th>
-                            <th scope="col">Work Orders Done</th>
-                            <th scope="col">Time Response (Days:Hours)</th>
-                            <th scope="col">Avg\Work Order</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Eng\...</th>
-                            <td>10</td>
-                            <td>7</td>
-                            <td>7:11</td>
-                            <td>24 Hours</td>
-                        </tr>
-                    </tbody>
-                </table>
-
             </main>
         </div>
     </div>
